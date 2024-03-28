@@ -1,0 +1,34 @@
+:root{
+    --block-width: 100px;
+    --block-heght: 100px;
+    --distance: 10px;
+}
+
+#container{
+    margin: 10px;
+    padding: var(--distance) 0 0  var(--distance);
+
+    width: calc(var(--block-width)*7+var(--distance)*7);
+    min-height: calc(var(--block-heght)+var(--distance));
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* #add-block{
+    margin: 10px;
+}
+
+#del-block{
+    margin: 10px;
+} */
+
+.block{
+    margin: 0 var(--distance) var(--distance) 0;
+
+    width: var(--block-width);
+    height: var(--block-heght);
+
+    border-radius: 50px;
+    background-color: red;
+}
